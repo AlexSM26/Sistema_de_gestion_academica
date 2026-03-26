@@ -1,0 +1,65 @@
+/* Contenedor login */
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titulos */
+.login-container h1 {
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* Formulario */
+#login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+#login-form input {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+#login-form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Botón */
+#login-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#login-form button:hover {
+  background-color: #2980b9;
+}
+
+/* Error */
+#login-error {
+  margin-top: 10px;
+  color: #e74c3c;
+  font-weight: bold;
+  text-align: center;
+}

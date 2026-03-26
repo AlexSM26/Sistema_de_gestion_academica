@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel Administrador</title>
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Sistema Académico</h2>
+    <nav>
+      <ul>
+        <li><a href="#usuarios">Usuarios</a></li>
+        <li><a href="#roles">Roles</a></li>
+        <li><a href="#estudiantes">Estudiantes</a></li>
+        <li><a href="#profesores">Profesores</a></li>
+      </ul>
+    </nav>
+    <button class="logout-btn" onclick="removeToken(); location.href='index.html'">Cerrar sesión</button>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <h1>Panel de Administrador</h1>
+
+    <section id="usuarios">
+      <h2>Usuarios</h2>
+      <ul id="user-list" class="list"></ul>
+    </section>
+
+    <section id="roles">
+      <h2>Roles</h2>
+      <ul id="rol-list" class="list"></ul>
+    </section>
+
+    <section id="estudiantes">
+      <h2>Estudiantes</h2>
+      <ul id="student-list" class="list"></ul>
+    </section>
+
+        <section id="Profesores">
+      <h2>Profesores</h2>
+      <ul id="teacher-list" class="list"></ul>
+    </section>
+  </main>
+
+</div>
+
+<script src="config/config.js"></script>
+<script src="services/token.js"></script>
+<script src="api/authAPI.js"></script>
+<script src="api/usersAPI.js"></script>
+<script src="api/rolesAPI.js"></script>
+<script src="api/teachersAPI.js"></script>
+<script src="api/studentsAPI.js"></script>
+
+<script src="pages/adminPage.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

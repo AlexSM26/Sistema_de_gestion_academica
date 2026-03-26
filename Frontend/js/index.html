@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Sistema Académico</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+<div class="login-container">
+  <h1>Iniciar sesión</h1>
+
+  <form id="login-form">
+    <input 
+      type="email" 
+      id="email" 
+      placeholder="Correo electrónico" 
+      required
+    >
+
+    <input 
+      type="password" 
+      id="password" 
+      placeholder="Contraseña" 
+      required
+    >
+
+    <button type="submit">Ingresar</button>
+  </form>
+
+  <p id="login-error"></p>
+</div>
+
+<!-- JS -->
+<script src="config/config.js"></script>
+<script src="services/token.js"></script>
+<script src="api/authAPI.js"></script>
+<script src="pages/loginPage.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
